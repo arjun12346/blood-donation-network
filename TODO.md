@@ -5,7 +5,7 @@
 - [x] Create `.gitignore`
 - [x] Initialize git repo
 - [x] Commit all code
-- [ ] Push to GitHub (https://github.com/arjun12346/blood-donation-network)
+- [x] Push to GitHub (https://github.com/arjun12346/blood-donation-network)
 
 ## Phase 2: Render Deployment
 
@@ -14,11 +14,15 @@
 - [x] Update backend `server.js` CORS for Render URLs
 - [x] Update frontend `.env` with Render API URL
 - [x] Update mobile `.env` with Render API URL
-- [ ] Deploy backend to Render
-- [ ] Deploy frontend to Render
+- [x] Create `COMPLETE_DEPLOYMENT_GUIDE.md`
+- [ ] Deploy backend to Render (manual - see guide)
+- [ ] Deploy frontend to Render (manual - see guide)
+- [ ] Configure custom domain DNS
+- [ ] Update env vars with custom domain
 
 ## Phase 3: Mobile APK Build & Install
 
-- [ ] Run `BUILD_APK.bat`
+- [x] Run `BUILD_APK.bat` (started)
+- [ ] Verify APK built successfully
 - [ ] Transfer APK to phone
 - [ ] Install on Android device
