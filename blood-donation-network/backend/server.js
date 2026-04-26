@@ -24,9 +24,18 @@ const passport = require('./middleware/passport')
 
 const app = express()
 const server = http.createServer(app)
+
+// ─── CORS Allowed Origins ─────────────────────────────────
+const allowedOrigins = process.env.CLIENT_URL?.split(',') || [
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'https://blood-donation-web.onrender.com',
+  'https://blood-donation-api.onrender.com',
+]
+
 const io = socketIo(server, {
   cors: {
-    origin: process.env.CLIENT_URL?.split(',') || 'http://localhost:5173',
+    origin: allowedOrigins,
     credentials: true,
   },
 })
@@ -60,7 +69,7 @@ app.use(passport.session())
 // ─── CORS Configuration ───────────────────────────────────
 app.use(
   cors({
-    origin: process.env.CLIENT_URL?.split(',') || 'http://localhost:5173',
+    origin: allowedOrigins,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization'],
