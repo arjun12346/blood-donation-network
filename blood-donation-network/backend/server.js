@@ -29,8 +29,7 @@ const server = http.createServer(app)
 const allowedOrigins = process.env.CLIENT_URL?.split(',') || [
   'http://localhost:5173',
   'http://localhost:5174',
-  'https://blood-donation-web.onrender.com',
-  'https://blood-donation-api.onrender.com',
+  'https://blood-donation-network.com',
 ]
 
 const io = socketIo(server, {

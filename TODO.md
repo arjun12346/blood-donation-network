@@ -3,17 +3,17 @@
 ## Phase 1: GitHub Setup
 
 - [x] Create `.gitignore`
-- [ ] Initialize git repo
-- [ ] Commit all code
+- [x] Initialize git repo
+- [x] Commit all code
 - [ ] Push to GitHub (https://github.com/arjun12346/blood-donation-network)
 
 ## Phase 2: Render Deployment
 
-- [ ] Create `render.yaml`
-- [ ] Update backend `.env` with MongoDB Atlas URI
-- [ ] Update backend `server.js` CORS for Render URLs
-- [ ] Update frontend `.env` with Render API URL
-- [ ] Update mobile `.env` with Render API URL
+- [x] Create `render.yaml`
+- [x] Update backend `.env` with MongoDB Atlas URI
+- [x] Update backend `server.js` CORS for Render URLs
+- [x] Update frontend `.env` with Render API URL
+- [x] Update mobile `.env` with Render API URL
 - [ ] Deploy backend to Render
 - [ ] Deploy frontend to Render
 
